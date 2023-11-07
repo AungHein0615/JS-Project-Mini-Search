@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Titillium+Web:wght@300;400&display=swap');
+
+
+.mainTitle {
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+}
+
+#myinput {
+  margin: 10px;
+  height: 30px;
+}
+
+.btnStyle {
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 320px;
+  height: 250px;
+  perspective: 500px;
+  margin: 10px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.back , .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: gray; */
+  backface-visibility: hidden;
+}
+
+
+.back {
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+.imgFront {
+  width: 200px;
+  height: 200px;
+  margin-left: 40px;
+  object-fit: contain;
+}
+
+.titleName {
+  font-family: fantasy;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.back {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+span {
+  font-size: 15px;
+}
